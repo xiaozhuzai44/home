@@ -1,0 +1,144 @@
+/* overall background and font */
+body{
+	background-color:#FFECE7;
+	color:#BE3810;
+	font-size:18px;
+	font-family:Georgia, serif;
+	margin:5%;
+}
+li,p{
+	color:black;
+}
+/* the titles */
+h1{
+	text-align:center;
+	background-color:#BE3810;
+	color:#FFECE7;
+	margin-top:93px;
+	font-size:45px;
+}
+h2{
+	border-left:5px solid #BE3810;
+	background-color:#FFC4B4;
+	padding:5px;
+}
+
+/* special homepage button on the left */
+#home{
+	float:left;
+}
+/* the look of the button when that is the current page */
+.current{
+	background-color:#942F11 !important;
+}
+
+/* entire navigation bar background */
+.navbar{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:#BE3810;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:75px;
+	position:fixed;
+}
+/* navigation bar each box */
+.navbar li{
+	float:right;
+	padding:28px;
+	font-family:Arial,sans-serif;
+	color:white;
+	font-size:16px;
+}
+/* navigation bar link (word) */
+.navbar li>a{
+	display:inline-block;
+	color:white;
+	text-decoration:none;
+}
+.navbar li:hover{
+	background-color:#ac3714;
+}
+
+/* dropdown content (the entire column as a whole)(the display:none; make it hidden by default) */
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background-color:#BE3810;
+}
+/* links(words) inside the dropdown */
+.dropdown-content a{
+	color:white;
+	padding:20px;
+	display:block;
+	border:1px solid white;
+	text-decoration:none;
+	text-align:center;
+}
+/* change color of dropdown link on hover */
+.dropdown-content a:hover{
+	background-color:#942F11;
+}
+/* show dropdown menu when hover button */
+#types:hover .dropdown-content{
+	display:block;
+}
+/* change the looks of the dropdown butten when the dropdown content is shown */
+#types:hover{
+	background-color:#ac3714;
+}
+
+/* reading progress bar */
+#progress-bar{
+	--scrollAmount:0%;
+	
+	
+	background-image:linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	width:var(--scrollAmount);
+	height:8px;
+	position:fixed;
+	top:75px;
+	left:0;
+}
+
+/* edits within the body parts */
+.bold{
+	font-weight:bold;
+}
+.linebreak{
+	display:block;
+}
+.italic{
+	font-style:italic;
+}
+.center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+img{
+	border:5px solid white;
+	width:100%;
+}
+.validator{
+	width:150px;
+}
+.imgvalue1{
+	width:60%;
+}
+.imgvalue2{
+	width:80%
+}
+
+
+footer{
+	background-color:#F16944;
+	width:100%;
+	position:absolute;
+	left:0;
+	padding:2%;
+	z-index:-1;
+}
